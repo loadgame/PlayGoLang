@@ -1,0 +1,8 @@
+{
+	"ListenSSL" : ":8443" ,
+	"Listen" : ":8080" ,
+	"Proxy" : "206.222.8.90:8000",
+	"CrtFile": "srv.cer",
+	"PemFile": "srv.prk",
+	"Nomsg" : 1
+}										   
