@@ -21,4 +21,8 @@ func main() {
 	for _ = range urls {
 		fmt.Println(<-done)
 	}
+	
+
+
+
 }
