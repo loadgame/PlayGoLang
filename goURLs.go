@@ -10,8 +10,9 @@ func main() {
 	for _, u := range urls {
 		go func(u string) {
 			resp, err := http.Get(u)
+
 			if err != nil {
-				done <- u + err.Error()
+				done <- u + err.Error() // + http.Cookie.Name
 
 			} else {
 				done <- u + resp.Status
